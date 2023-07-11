@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&family=Pacifico&family=Poppins:wght@300;400&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #063d3d;
+}
+
+a:hover {
+    color: #008080;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: teal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+    padding: 1.4rem;
+}
+
+header nav ul li a {
+    /* background-color: rgba(18, 139, 139, 0.584); */
+    padding: 0.5rem 2rem;
+    border-radius: 0.3rem;
+    color: aquamarine;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+}
+
+header nav ul li a:hover {
+    background-color: white;
+    color: #008080;
+}
+
+
+header #title a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+}
+
+header .mobile-nav {
+    display: none;
+    cursor: pointer;
+}
+
+
+
+
+main #wallpaper {
+    background-color: rgb(39, 164, 148);
+    width: 100%;
+    height: 100vh;
+    background-image: url('./images/wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.4);
+}
+
+
+main #wallpaper-title {
+    position: absolute;
+    color: white;
+    top: 40%;
+    left: 25%;
+    font-size: 5rem;
+}
+
+
+main #enroll {
+    position: absolute;
+    top: 80%;
+    left: 45%;
+    background-color: aquamarine;
+    text-decoration: none;
+    color: teal;
+    padding: 1rem 2rem;
+    font-family: 'Pacifico';
+    letter-spacing: 2px;
+    font-size: large;
+    border-radius: 1rem;
+}
+
+main .bg {
+    height: 100%;
+    background-image: url('./images/bg.jpg');
+    background-size: contain;
+}
+
+main .bg h1 {
+    text-align: center;
+    padding: 1rem;
+    font-size: 4.5rem;
+}
+
+
+
+.topic {
+    background-color: rgb(179, 232, 206);
+    padding: 2rem;
+    width: 90%;
+    margin: 2rem auto;
+    border-radius: 0.5rem;
+}
+
+.topic h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.topic .ref {
+    color: rgb(20, 95, 108);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.topic .ref:hover {
+    color: rgb(29, 140, 196);
+    text-decoration: underline;
+}
+
+.topic p {
+    padding: 0.1rem 10rem 1rem 0;
+    line-height: 1.5;
+    font-size: large;
+    font-family: 'Poppins', sans-serif;
+}
+
+.topic img {
+    width: 70%;
+    display: flex;
+    border-radius: 1rem;
+    margin: 0 auto;
+}
+
+
+
+.topic ul li {
+    list-style-type: none;
+    padding: 0.5rem 0 2rem 2rem;
+    
+}
+
+.topic ul li blockquote {
+    padding: 0;
+}
+
+.topic ul li a {
+    border-radius: 0.4rem;
+    padding: 0.2rem 1rem;
+    color: #063d3d;
+    font-size: 1.4rem;
+}
+
+.topic ul li a:hover {
+    color: #008080;
+}
+
+.show {
+    max-height: 20rem;
+}
+
+
+
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #063d3d;
+    justify-content: space-around;
+}
+
+footer #ft-info {
+    color: whitesmoke;
+    list-style: none;
+    text-align: center;
+    line-height: 1.5;
+}
+
+footer #ft-info a {
+    text-decoration: none;
+    color: #008080;
+}
+
+
+footer #ft-social {
+    display: flex;
+    gap: 1rem;
+}
+
+
+footer #ft-social a {
+    text-decoration: none;
+    color: rgba(127, 255, 212, 0.795);
+}
+
+footer #ft-useful {
+    color: rgba(127, 255, 212, 0.795);
+    list-style-type: none;
+    line-height: 1.5;
+}
+
+
+footer #ft-useful a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+@media only screen and (max-width: 840px) {
+
+    header .mobile-nav {
+        display: block;
+    }
+
+    main #wallpaper-title {
+        font-size: 3rem;
+        left: 20%;
+        top: 40%;
+    }
+
+    main #enroll {
+        left: 20%;
+        top: 60%;
+    }
+
+    header nav {
+        max-height: 0rem;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+
+    header {
+        width: auto;
+        display: block;
+    }
+
+    header .RespNav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header .RespNav .mobile-nav #menu-btn {
+        width: 42px;
+    }
+
+    main #enroll {
+        top: 65%;
+    }
+
+    .topic {
+        width: 80%;
+    }
+
+    .topic img {
+        width: 100%;
+    }
+
+    .topic p {
+        padding: 0;
+        text-align: start;
+    }
+
+    .topic ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .topic ul li{
+        padding-right: 0;
+        padding-top: 0.4rem;
+        margin-right: 0;
+    }
+
+
+
+    footer #ft-info {
+        padding: 0;
+    }
+
+}
