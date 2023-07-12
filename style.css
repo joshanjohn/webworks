@@ -49,7 +49,7 @@ header nav ul li a {
     transition: all 0.3s ease-out;
 }
 
-header nav ul li a:hover{
+header nav ul li a:hover {
     background-color: white;
     color: #008080;
 }
@@ -171,25 +171,34 @@ main h1 {
 }
 
 
-.slide{
+.slide {
     display: none;
 }
 
-.slide h2{
+.slide h2 {
     font-size: 2rem;
 }
 
-.slide h3, .slide i{
+.slide h3,
+.slide i {
     font-size: 1.7rem;
 }
 
-.slide input[type="text"]{
+.slide input[type="text"],
+.slide select {
     box-sizing: border-box;
     padding: 0.5rem;
     border: 2px solid #008080;
 }
 
-.slide button{
+input[type="radio"] {
+    width: 1.2rem;
+    height: 1.2rem;
+    color: red;
+    margin-bottom: 1rem;
+}
+
+.slide button {
     font-size: medium;
     text-transform: capitalize;
     border: none;
@@ -203,29 +212,29 @@ main h1 {
     transition: all 0.3s ease-out;
 }
 
-.slide button:hover{
+.slide button:hover {
     color: #063d3d;
     background-color: #06989843;
 }
 
-.quiz-head{
+.quiz-head {
     display: flex;
     width: 50%;
     justify-content: space-between;
     align-items: center;
 }
 
-.quiz-head i span{
+.quiz-head i span {
     font-family: 'Poppins', sans-serif;
 }
 
-.quiz-nav{
+.quiz-nav {
     display: flex;
-    margin: 0.3rem auto;
-    width: 100%;
-    justify-content: space-between;
+    width: 20%;
+    justify-content:space-between;
 }
-.quiz-nav button{
+
+.quiz-nav button {
     color: #008080;
     cursor: pointer;
     background-color: transparent;
@@ -233,7 +242,7 @@ main h1 {
     transition: 0.5s ease-in-out;
 }
 
-.quiz-nav button:hover{
+.quiz-nav button:hover {
     color: #3ca88a;
 }
 
@@ -251,7 +260,7 @@ main h1 {
     margin: 3rem 0;
 }
 
-.bottom-nav .btn{
+.bottom-nav .btn {
     padding: 1rem 2rem;
     align-items: center;
     color: white;
@@ -260,7 +269,7 @@ main h1 {
     transition: all 0.5s ease;
 }
 
-.bottom-nav .btn:hover{
+.bottom-nav .btn:hover {
     color: #063d3d;
     background-color: aquamarine;
 }
@@ -384,9 +393,15 @@ footer #ft-useful a {
         margin-right: 0;
     }
 
-    .quiz-head{
+    .quiz-head {
         width: 100%;
         justify-content: space-between;
+    }
+
+    .quiz-nav{
+        justify-content: space-around;
+        width: 100%;
+        
     }
 
 
