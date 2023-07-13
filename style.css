@@ -170,6 +170,18 @@ main h1 {
     color: #008080;
 }
 
+.avatar{
+    width: 50vh;
+    height: 50vh;
+    background-image: url('./images/avatar.jpeg');
+    margin: 1rem auto;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 2px 1px 85px 0px rgba(0,0,0,0.41) inset;
+}
+
+
+
 
 .slide {
     display: none;
