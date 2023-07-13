@@ -21,15 +21,15 @@ let slideCount = document.getElementById("slide-count");
 
 let currentSlide = 0;
 
+menuBtn.addEventListener('click', () => {
+    console.log("hello");
+    navBar.classList.toggle("show");
+})
 
 window.onload = () => {
     updateSlide()
     slideCount.innerHTML = currentSlide + 1;
 
-    menuBtn.addEventListener('click', () => {
-        console.log("hello");
-        navBar.classList.toggle("show");
-    })
 
     nextBtn.addEventListener("click", () => {
         if (currentSlide < slides.length) {
