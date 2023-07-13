@@ -171,8 +171,8 @@ main h1 {
 }
 
 .avatar{
-    width: 50vh;
-    height: 50vh;
+    width: 400px;
+    height: 400px;
     background-image: url('./images/avatar.jpeg');
     margin: 1rem auto;
     background-size: cover;
@@ -403,6 +403,11 @@ footer #ft-useful a {
         padding-right: 0;
         padding-top: 0.4rem;
         margin-right: 0;
+    }
+
+    .avatar{
+        min-width: 200px;
+        min-height: 200px;
     }
 
     .quiz-head {
