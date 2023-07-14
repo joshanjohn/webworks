@@ -177,7 +177,7 @@ main h1 {
     margin: 1rem auto;
     background-size: cover;
     border-radius: 50%;
-    box-shadow: 2px 1px 85px 0px rgba(0,0,0,0.41) inset;
+    /* box-shadow: 2px 1px 85px 0px rgba(0,0,0,0.41) inset; */
 }
 
 
@@ -406,8 +406,8 @@ footer #ft-useful a {
     }
 
     .avatar{
-        min-width: 200px;
-        min-height: 200px;
+        max-width: 250px;
+        max-height: 250px;
     }
 
     .quiz-head {
@@ -420,8 +420,6 @@ footer #ft-useful a {
         width: 100%;
         
     }
-
-
 
     footer #ft-info {
         padding: 0;
